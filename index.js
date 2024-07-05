@@ -17,6 +17,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(cookieParser())
 
+app.use(cors({
+    origin: 'https://angular-shop-test.vercel.app'
+}));
+
 app.use('/auth', require('./routes/authRoute'))
 app.use('/users', require('./routes/userRoute'))
 app.use('/products', require('./routes/productRoute'))

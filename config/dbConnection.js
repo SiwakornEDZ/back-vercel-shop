@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 const { MongoClient, ServerApiVersion } = require('mongodb');
-// const uri = "mongodb+srv://siwakornqwer:m0WfmokyC2YAp3lt@cluster0.qsog5xm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-require('dotenv').config();
-const uri = process.env.MONGODB_URL;
+const uri = "mongodb+srv://siwakornqwer:m0WfmokyC2YAp3lt@cluster0.qsog5xm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// require('dotenv').config();
+// const uri = process.env.MONGODB_URL;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {

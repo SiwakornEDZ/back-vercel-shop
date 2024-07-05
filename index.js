@@ -11,9 +11,8 @@ const { notFound, errorHandler } = require('./middlewares/errorHandler')
 const cors = require('cors')
 
 // const port = process.env.PORT || 5050
-app.use(cors({
-    origin: ['http://localhost:4200', 'https://angular-shop-two.vercel.app', 'https://angular-shop-test.vercel.app', 'https://back-vercel-shop.vercel.app']
-}));
+app.use(cors())
+//app.use(morgan('dev')).
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(cookieParser())

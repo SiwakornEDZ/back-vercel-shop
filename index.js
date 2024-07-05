@@ -5,7 +5,7 @@ const PORT = 4000
 const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
-const connectDb = require('./config/dbConnection')
+// const connectDb = require('./config/dbConnection')
 const dotenv = require('dotenv').config()
 const { notFound, errorHandler } = require('./middlewares/errorHandler')
 const cors = require('cors')
@@ -33,7 +33,7 @@ app.get('/home', (req, res) => {
 
 
 app.listen(PORT, () => {
-    connectDb().then(r => console.log('Database connected'))
+    // connectDb().then(r => console.log('Database connected'))
     console.log(`Server running at http://localhost:${PORT}`);
 });
 

@@ -33,6 +33,7 @@ app.get('/home', (req, res) => {
 
 
 app.listen(PORT, () => {
+    connectDb().then(r => console.log('Database connected'))
     console.log(`Server running at http://localhost:${PORT}`);
 });
 

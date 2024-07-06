@@ -28,7 +28,7 @@ app.use(notFound)
 app.use(errorHandler)
 
 app.get('/home', (req, res) => {
-    res.status(200).json('Welcome, your app is working well');
+    res.status(200).json('Welcome, your app is working wells');
 })
 
 

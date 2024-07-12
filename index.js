@@ -20,6 +20,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(cookieParser())
 
+
+app.get('/', (req, res) => {
+    res.status(200).json('Welcome, your app is working well');
+})
 app.use('/auth', require('./routes/authRoute'))
 app.use('/users', require('./routes/userRoute'))
 app.use('/products', require('./routes/productRoute'))
